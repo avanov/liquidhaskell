@@ -21,7 +21,7 @@
 
 module Language.Haskell.Liquid.Types.Generics where
 
-import GHC.Generics
+import GHC.Generics hiding (Generically)
 import Data.Hashable
 import Data.Binary
 import Data.Hashable.Generic
