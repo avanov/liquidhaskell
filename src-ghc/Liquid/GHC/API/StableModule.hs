@@ -45,8 +45,8 @@ renderModule m =    "Module { unitId = " <> (GHC.unitIdString . moduleUnitId $ m
 instance Hashable GHC.ModuleName where
   hashWithSalt i = hashWithSalt i . show
 
-instance Show GHC.ModuleName where
-  show = GHC.moduleNameString
+--instance Show GHC.ModuleName where
+--  show = GHC.moduleNameString
 
 instance Hashable StableModule where
   hashWithSalt s (StableModule mdl) = hashWithSalt s (GHC.moduleStableString mdl)
